@@ -8,8 +8,7 @@
 (function () {
     "use strict";
 
-
-    // date day config options for calendar day cells
+    // date config object for calendar day cell display
     const dayValueConfig = function (date, calendarMonth) {
         // the state property is used for setting the class on out of scope dates
         const state = date.getMonth() === calendarMonth
