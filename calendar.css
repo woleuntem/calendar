@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,400i,600,700');
+
+#calendar-month {
+    font-family: 'Libre Franklin', sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 1.8rem;
+    margin: 0.5rem;
+    line-height: 1.5;
+    flex: 1 1 auto;
+
+}
+
+.calendar-banner,
+.calendar-week {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.calendar-banner {
+    background-color: rgb(52, 152, 219);
+    border-radius: 4px;
+    color: #fff;
+    padding: 0 0.3rem;
+}
+
+.calendar-day {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0.5em;
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0px;
+    white-space: nowrap;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.calendar-day.inactive {
+    color: #ccc;
+    font-style: italic;
+}
+
+.banner-left,
+.banner-centre,
+.banner-right {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    flex-grow: 1;
+}
+
+.banner-left,
+.banner-right {
+    padding-top: 0.7rem;
+}
+
+.banner-centre {
+    flex-grow: 3;
+}
+
+select {
+    font-size: 1.6rem;
+    background-color: rgb(52, 152, 219);
+    border: 0 none;
+    padding: 0 !important;
+    color: #fff;
+    margin: 0 0.6rem;
+}
+
+.banner-centre>div {
+    margin:auto;
+}
+
+select:focus {
+    outline: none;
+}
+
+.month-control.right {
+    margin-left: auto;
+}
