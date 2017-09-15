@@ -1,2 +1,2 @@
 # calendar
-Calendar widget build with React
+Calendar widget built with React
